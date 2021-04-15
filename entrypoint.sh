@@ -27,7 +27,7 @@ git clone --single-branch --branch "$TARGET_BRANCH" "https://$API_TOKEN_GITHUB@g
 ls -la "$CLONE_DIR"
 
 TARGET_DIR=$(mktemp -d)
-mv "$CLONE_DIR/.git" "$TARGET_DIR"
+#mv "$CLONE_DIR/.git" "$TARGET_DIR"
 
 echo "Copying contents to git repo"
 cp -ra "$SOURCE_DIRECTORY"/. "$TARGET_DIR"
